@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: medicare_postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: hospital_ms
+    volumes:
+      - medicare_postgres_data:/var/lib/postgresql/data
+    restart: always
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: medicare_api
+    ports:
+      - "8080:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Host=db;Port=5432;Database=hospital_ms;Username=postgres;Password=postgres
+      - Jwt__Secret=SuperSecretKeyForMediCareHospitalSystem2026!!!
+      - Jwt__Issuer=MediCareHospital
+      - Jwt__Audience=MediCareHospitalUsers
+    depends_on:
+      - db
+    restart: always
+
+volumes:
+  medicare_postgres_data:
