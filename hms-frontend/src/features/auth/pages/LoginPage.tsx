@@ -8,7 +8,7 @@ import { Heart, Mail, Lock, Eye, EyeOff } from "lucide-react"
 import { useAuth } from "@/hooks/useAuth"
 import { DASHBOARD_ROUTES } from "@/lib/constants"
 import apiClient from "@/api/client"
-import { ApiResponse } from "@/types"
+import type { ApiResponse } from "@/types"
 
 const loginSchema = z.object({
   email: z.string().email("Invalid email address"),

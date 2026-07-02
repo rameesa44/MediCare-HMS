@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, useLocation } from "react-router-dom"
 import { useAuth } from "@/hooks/useAuth"
-import { DASHBOARD_ROUTES, USER_ROLES } from "@/lib/constants"
+import { DASHBOARD_ROUTES } from "@/lib/constants"
 import {
   LayoutDashboard,
   Users,
