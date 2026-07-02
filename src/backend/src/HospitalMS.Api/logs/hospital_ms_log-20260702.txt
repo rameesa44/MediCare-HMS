@@ -1,0 +1,27 @@
+2026-07-02 13:18:15.210 +05:00 [INF] Saved 0 entities to in-memory store.
+2026-07-02 13:18:17.637 +05:00 [INF] Saved 5 entities to in-memory store.
+2026-07-02 13:18:17.742 +05:00 [INF] Saved 2 entities to in-memory store.
+2026-07-02 13:18:18.049 +05:00 [INF] Saved 3 entities to in-memory store.
+2026-07-02 13:18:18.121 +05:00 [INF] Saved 1 entities to in-memory store.
+2026-07-02 13:18:18.187 +05:00 [INF] Saved 3 entities to in-memory store.
+2026-07-02 13:18:18.194 +05:00 [INF] Database seeding completed successfully.
+2026-07-02 13:18:18.202 +05:00 [INF] Starting MediCare Hospital Management System API...
+2026-07-02 13:18:18.239 +05:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-02 13:18:18.467 +05:00 [INF] Now listening on: http://localhost:5278
+2026-07-02 13:18:18.476 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-02 13:18:18.480 +05:00 [INF] Hosting environment: Development
+2026-07-02 13:18:18.482 +05:00 [INF] Content root path: C:\Users\HP\Downloads\scd\src\backend\src\HospitalMS.Api
+2026-07-02 13:40:41.377 +05:00 [INF] Application is shutting down...
+2026-07-02 13:42:36.938 +05:00 [INF] Saved 0 entities to in-memory store.
+2026-07-02 13:42:38.933 +05:00 [INF] Saved 5 entities to in-memory store.
+2026-07-02 13:42:39.027 +05:00 [INF] Saved 2 entities to in-memory store.
+2026-07-02 13:42:39.341 +05:00 [INF] Saved 3 entities to in-memory store.
+2026-07-02 13:42:39.418 +05:00 [INF] Saved 1 entities to in-memory store.
+2026-07-02 13:42:39.485 +05:00 [INF] Saved 3 entities to in-memory store.
+2026-07-02 13:42:39.490 +05:00 [INF] Database seeding completed successfully.
+2026-07-02 13:42:39.500 +05:00 [INF] Starting MediCare Hospital Management System API...
+2026-07-02 13:42:39.533 +05:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-02 13:42:39.665 +05:00 [INF] Now listening on: http://localhost:5278
+2026-07-02 13:42:39.672 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-02 13:42:39.677 +05:00 [INF] Hosting environment: Development
+2026-07-02 13:42:39.681 +05:00 [INF] Content root path: C:\Users\HP\Downloads\scd\src\backend\src\HospitalMS.Api

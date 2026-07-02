@@ -14,10 +14,24 @@ public static class DependencyInjection
     public static IServiceCollection AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
     {
         var connectionString = configuration.GetConnectionString("DefaultConnection");
+        var useInMemory = false;
+        if (bool.TryParse(configuration["UseInMemoryDatabase"], out var parsedInMemory))
+        {
+            useInMemory = parsedInMemory;
+        }
         
         services.AddDbContext<HospitalDbContext>(options =>
-            options.UseNpgsql(connectionString, b => 
-                b.MigrationsAssembly(typeof(HospitalDbContext).Assembly.FullName)));
+        {
+            if (useInMemory)
+            {
+                options.UseInMemoryDatabase("MedicareHospitalDb");
+            }
+            else
+            {
+                options.UseNpgsql(connectionString, b => 
+                    b.MigrationsAssembly(typeof(HospitalDbContext).Assembly.FullName));
+            }
+        });
 
         // Repositories & Unit of Work
         services.AddScoped(typeof(IRepository<>), typeof(GenericRepository<>));
@@ -25,6 +39,7 @@ public static class DependencyInjection
 
         // Services
         services.AddTransient<IEmailService, EmailService>();
+        services.AddTransient<ITokenService, TokenService>();
 
         return services;
     }

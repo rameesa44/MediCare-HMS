@@ -25,6 +25,7 @@ public class HospitalDbContext : DbContext
     public DbSet<Appointment> Appointments => Set<Appointment>();
     public DbSet<DoctorSchedule> DoctorSchedules => Set<DoctorSchedule>();
     public DbSet<Token> Tokens => Set<Token>();
+    public DbSet<RefreshToken> RefreshTokens => Set<RefreshToken>();
     public DbSet<MedicalRecord> MedicalRecords => Set<MedicalRecord>();
     public DbSet<Prescription> Prescriptions => Set<Prescription>();
     public DbSet<PatientVital> PatientVitals => Set<PatientVital>();

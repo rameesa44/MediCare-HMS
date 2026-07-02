@@ -16,6 +16,7 @@ public interface IUnitOfWork : IDisposable
     IRepository<Appointment> Appointments { get; }
     IRepository<DoctorSchedule> DoctorSchedules { get; }
     IRepository<Token> Tokens { get; }
+    IRepository<RefreshToken> RefreshTokens { get; }
     IRepository<MedicalRecord> MedicalRecords { get; }
     IRepository<Prescription> Prescriptions { get; }
     IRepository<PatientVital> PatientVitals { get; }

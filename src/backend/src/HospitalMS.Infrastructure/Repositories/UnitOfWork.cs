@@ -16,6 +16,7 @@ public class UnitOfWork : IUnitOfWork
     private IRepository<Appointment>? _appointments;
     private IRepository<DoctorSchedule>? _doctorSchedules;
     private IRepository<Token>? _tokens;
+    private IRepository<RefreshToken>? _refreshTokens;
     private IRepository<MedicalRecord>? _medicalRecords;
     private IRepository<Prescription>? _prescriptions;
     private IRepository<PatientVital>? _patientVitals;
@@ -48,6 +49,7 @@ public class UnitOfWork : IUnitOfWork
     public IRepository<Appointment> Appointments => _appointments ??= new GenericRepository<Appointment>(_dbContext);
     public IRepository<DoctorSchedule> DoctorSchedules => _doctorSchedules ??= new GenericRepository<DoctorSchedule>(_dbContext);
     public IRepository<Token> Tokens => _tokens ??= new GenericRepository<Token>(_dbContext);
+    public IRepository<RefreshToken> RefreshTokens => _refreshTokens ??= new GenericRepository<RefreshToken>(_dbContext);
     public IRepository<MedicalRecord> MedicalRecords => _medicalRecords ??= new GenericRepository<MedicalRecord>(_dbContext);
     public IRepository<Prescription> Prescriptions => _prescriptions ??= new GenericRepository<Prescription>(_dbContext);
     public IRepository<PatientVital> PatientVitals => _patientVitals ??= new GenericRepository<PatientVital>(_dbContext);

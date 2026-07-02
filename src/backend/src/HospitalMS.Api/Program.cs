@@ -65,6 +65,22 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+// Programmatic DB Seeding
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    try
+    {
+        var context = services.GetRequiredService<HospitalMS.Infrastructure.Data.HospitalDbContext>();
+        await HospitalMS.Infrastructure.Data.DatabaseSeeder.SeedAsync(context);
+        Log.Information("Database seeding completed successfully.");
+    }
+    catch (Exception ex)
+    {
+        Log.Error(ex, "An error occurred while seeding the database.");
+    }
+}
+
 try
 {
     Log.Information("Starting MediCare Hospital Management System API...");
