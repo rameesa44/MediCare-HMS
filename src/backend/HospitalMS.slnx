@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/HospitalMS.Api/HospitalMS.Api.csproj" />
+    <Project Path="src/HospitalMS.Application/HospitalMS.Application.csproj" />
+    <Project Path="src/HospitalMS.Domain/HospitalMS.Domain.csproj" />
+    <Project Path="src/HospitalMS.Infrastructure/HospitalMS.Infrastructure.csproj" />
+  </Folder>
+</Solution>
