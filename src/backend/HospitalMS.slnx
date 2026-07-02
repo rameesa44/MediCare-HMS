@@ -4,5 +4,6 @@
     <Project Path="src/HospitalMS.Application/HospitalMS.Application.csproj" />
     <Project Path="src/HospitalMS.Domain/HospitalMS.Domain.csproj" />
     <Project Path="src/HospitalMS.Infrastructure/HospitalMS.Infrastructure.csproj" />
+    <Project Path="src/HospitalMS.UnitTests/HospitalMS.UnitTests.csproj" />
   </Folder>
 </Solution>
