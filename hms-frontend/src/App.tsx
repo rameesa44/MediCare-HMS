@@ -42,14 +42,8 @@ function App() {
                 <Route path="/login" element={<LoginPage />} />
                 <Route path="/unauthorized" element={<UnauthorizedPage />} />
 
-                {/* Protected Dashboard Routes */}
-                <Route
-                  element={
-                    <ProtectedRoute>
-                      <DashboardLayout />
-                    </ProtectedRoute>
-                  }
-                >
+                {/* Protected Dashboard Routes — DashboardLayout handles auth redirect */}
+                <Route element={<DashboardLayout />}>
                   {/* Admin Routes */}
                   <Route
                     path="/admin"
