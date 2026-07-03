@@ -2811,3 +2811,295 @@ Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime
 2026-07-03 15:50:16.672 +05:00 [INF] Executed endpoint 'HospitalMS.Api.Controllers.WardsController.GetAdmissions (HospitalMS.Api)'
 2026-07-03 15:50:16.675 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5278/api/v1/appointments?doctorId=1d95297d-9557-4af5-9d57-409cc0c7daf1 - 200 null application/json; charset=utf-8 120.9497ms
 2026-07-03 15:50:16.680 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5278/api/v1/wards/admissions - 200 null application/json; charset=utf-8 115.5254ms
+2026-07-03 15:57:43.864 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5278/api/v1/auth/login - null null
+2026-07-03 15:57:43.873 +05:00 [INF] CORS policy execution successful.
+2026-07-03 15:57:43.875 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5278/api/v1/auth/login - 204 null null 11.8042ms
+2026-07-03 15:57:43.886 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5278/api/v1/auth/login - application/json 72
+2026-07-03 15:57:43.897 +05:00 [INF] CORS policy execution successful.
+2026-07-03 15:57:43.898 +05:00 [INF] Executing endpoint 'HospitalMS.Api.Controllers.AuthController.Login (HospitalMS.Api)'
+2026-07-03 15:57:43.904 +05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HospitalMS.Application.Common.ApiResponse`1[HospitalMS.Application.DTOs.Auth.AuthResponse]]] Login(HospitalMS.Application.DTOs.Auth.LoginRequest) on controller HospitalMS.Api.Controllers.AuthController (HospitalMS.Api).
+2026-07-03 15:57:44.155 +05:00 [INF] Saved 1 entities to in-memory store.
+2026-07-03 15:57:44.161 +05:00 [INF] Executing OkObjectResult, writing value of type 'HospitalMS.Application.Common.ApiResponse`1[[HospitalMS.Application.DTOs.Auth.AuthResponse, HospitalMS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-03 15:57:44.165 +05:00 [INF] Executed action HospitalMS.Api.Controllers.AuthController.Login (HospitalMS.Api) in 252.3477ms
+2026-07-03 15:57:44.170 +05:00 [INF] Executed endpoint 'HospitalMS.Api.Controllers.AuthController.Login (HospitalMS.Api)'
+2026-07-03 15:57:44.173 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5278/api/v1/auth/login - 200 null application/json; charset=utf-8 287.5127ms
+2026-07-03 15:57:44.228 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5278/api/v1/dashboard/stats - null null
+2026-07-03 15:57:44.230 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5278/api/v1/dashboard/stats - null null
+2026-07-03 15:57:44.237 +05:00 [INF] CORS policy execution successful.
+2026-07-03 15:57:44.247 +05:00 [INF] CORS policy execution successful.
+2026-07-03 15:57:44.249 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5278/api/v1/dashboard/stats - 204 null null 20.9468ms
+2026-07-03 15:57:44.252 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5278/api/v1/dashboard/stats - 204 null null 22.2605ms
+2026-07-03 15:57:44.262 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5278/api/v1/dashboard/stats - null null
+2026-07-03 15:57:44.280 +05:00 [INF] CORS policy execution successful.
+2026-07-03 15:57:44.284 +05:00 [INF] Executing endpoint 'HospitalMS.Api.Controllers.DashboardController.GetDashboardStats (HospitalMS.Api)'
+2026-07-03 15:57:44.290 +05:00 [INF] Route matched with {action = "GetDashboardStats", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HospitalMS.Application.Common.ApiResponse`1[HospitalMS.Application.DTOs.Dashboard.DashboardStatsDto]]] GetDashboardStats() on controller HospitalMS.Api.Controllers.DashboardController (HospitalMS.Api).
+2026-07-03 15:57:44.297 +05:00 [INF] Executing OkObjectResult, writing value of type 'HospitalMS.Application.Common.ApiResponse`1[[HospitalMS.Application.DTOs.Dashboard.DashboardStatsDto, HospitalMS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-03 15:57:44.302 +05:00 [INF] Executed action HospitalMS.Api.Controllers.DashboardController.GetDashboardStats (HospitalMS.Api) in 7.1909ms
+2026-07-03 15:57:44.304 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5278/api/v1/dashboard/stats - null null
+2026-07-03 15:57:44.306 +05:00 [INF] Executed endpoint 'HospitalMS.Api.Controllers.DashboardController.GetDashboardStats (HospitalMS.Api)'
+2026-07-03 15:57:44.310 +05:00 [INF] CORS policy execution successful.
+2026-07-03 15:57:44.312 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5278/api/v1/dashboard/stats - 200 null application/json; charset=utf-8 50.6872ms
+2026-07-03 15:57:44.315 +05:00 [INF] Executing endpoint 'HospitalMS.Api.Controllers.DashboardController.GetDashboardStats (HospitalMS.Api)'
+2026-07-03 15:57:44.327 +05:00 [INF] Route matched with {action = "GetDashboardStats", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HospitalMS.Application.Common.ApiResponse`1[HospitalMS.Application.DTOs.Dashboard.DashboardStatsDto]]] GetDashboardStats() on controller HospitalMS.Api.Controllers.DashboardController (HospitalMS.Api).
+2026-07-03 15:57:44.336 +05:00 [INF] Executing OkObjectResult, writing value of type 'HospitalMS.Application.Common.ApiResponse`1[[HospitalMS.Application.DTOs.Dashboard.DashboardStatsDto, HospitalMS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-03 15:57:44.340 +05:00 [INF] Executed action HospitalMS.Api.Controllers.DashboardController.GetDashboardStats (HospitalMS.Api) in 5.6765ms
+2026-07-03 15:57:44.344 +05:00 [INF] Executed endpoint 'HospitalMS.Api.Controllers.DashboardController.GetDashboardStats (HospitalMS.Api)'
+2026-07-03 15:57:44.348 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5278/api/v1/dashboard/stats - 200 null application/json; charset=utf-8 43.6354ms
+2026-07-03 15:58:03.261 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5278/api/v1/audit-logs - null null
+2026-07-03 15:58:03.261 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5278/api/v1/audit-logs - null null
+2026-07-03 15:58:03.272 +05:00 [INF] CORS policy execution successful.
+2026-07-03 15:58:03.283 +05:00 [INF] CORS policy execution successful.
+2026-07-03 15:58:03.286 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5278/api/v1/audit-logs - 204 null null 24.9193ms
+2026-07-03 15:58:03.290 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5278/api/v1/audit-logs - 204 null null 28.2696ms
+2026-07-03 15:58:03.297 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5278/api/v1/audit-logs - null null
+2026-07-03 15:58:03.321 +05:00 [INF] CORS policy execution successful.
+2026-07-03 15:58:03.324 +05:00 [INF] Executing endpoint 'HospitalMS.Api.Controllers.AuditLogsController.GetLogs (HospitalMS.Api)'
+2026-07-03 15:58:03.328 +05:00 [INF] Route matched with {action = "GetLogs", controller = "AuditLogs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HospitalMS.Application.Common.ApiResponse`1[System.Collections.Generic.IReadOnlyList`1[HospitalMS.Application.DTOs.AuditLog.AuditLogDto]]]] GetLogs() on controller HospitalMS.Api.Controllers.AuditLogsController (HospitalMS.Api).
+2026-07-03 15:58:03.336 +05:00 [INF] Executing OkObjectResult, writing value of type 'HospitalMS.Application.Common.ApiResponse`1[[System.Collections.Generic.IReadOnlyList`1[[HospitalMS.Application.DTOs.AuditLog.AuditLogDto, HospitalMS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-07-03 15:58:03.342 +05:00 [INF] Executed action HospitalMS.Api.Controllers.AuditLogsController.GetLogs (HospitalMS.Api) in 7.4616ms
+2026-07-03 15:58:03.347 +05:00 [INF] Executed endpoint 'HospitalMS.Api.Controllers.AuditLogsController.GetLogs (HospitalMS.Api)'
+2026-07-03 15:58:03.344 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5278/api/v1/audit-logs - null null
+2026-07-03 15:58:03.352 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5278/api/v1/audit-logs - 200 null application/json; charset=utf-8 55.4558ms
+2026-07-03 15:58:03.362 +05:00 [INF] CORS policy execution successful.
+2026-07-03 15:58:03.377 +05:00 [INF] Executing endpoint 'HospitalMS.Api.Controllers.AuditLogsController.GetLogs (HospitalMS.Api)'
+2026-07-03 15:58:03.381 +05:00 [INF] Route matched with {action = "GetLogs", controller = "AuditLogs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HospitalMS.Application.Common.ApiResponse`1[System.Collections.Generic.IReadOnlyList`1[HospitalMS.Application.DTOs.AuditLog.AuditLogDto]]]] GetLogs() on controller HospitalMS.Api.Controllers.AuditLogsController (HospitalMS.Api).
+2026-07-03 15:58:03.390 +05:00 [INF] Executing OkObjectResult, writing value of type 'HospitalMS.Application.Common.ApiResponse`1[[System.Collections.Generic.IReadOnlyList`1[[HospitalMS.Application.DTOs.AuditLog.AuditLogDto, HospitalMS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-07-03 15:58:03.398 +05:00 [INF] Executed action HospitalMS.Api.Controllers.AuditLogsController.GetLogs (HospitalMS.Api) in 8.7568ms
+2026-07-03 15:58:03.401 +05:00 [INF] Executed endpoint 'HospitalMS.Api.Controllers.AuditLogsController.GetLogs (HospitalMS.Api)'
+2026-07-03 15:58:03.404 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5278/api/v1/audit-logs - 200 null application/json; charset=utf-8 60.4752ms
+2026-07-03 15:58:19.986 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5278/api/v1/billing/invoices - null null
+2026-07-03 15:58:19.987 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5278/api/v1/patients - null null
+2026-07-03 15:58:19.988 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5278/api/v1/billing/invoices - null null
+2026-07-03 15:58:19.990 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5278/api/v1/patients - null null
+2026-07-03 15:58:19.996 +05:00 [INF] CORS policy execution successful.
+2026-07-03 15:58:20.004 +05:00 [INF] CORS policy execution successful.
+2026-07-03 15:58:20.013 +05:00 [INF] CORS policy execution successful.
+2026-07-03 15:58:20.023 +05:00 [INF] CORS policy execution successful.
+2026-07-03 15:58:20.028 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5278/api/v1/billing/invoices - 204 null null 42.1612ms
+2026-07-03 15:58:20.031 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5278/api/v1/patients - 204 null null 43.8963ms
+2026-07-03 15:58:20.033 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5278/api/v1/billing/invoices - 204 null null 44.2824ms
+2026-07-03 15:58:20.037 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5278/api/v1/patients - 204 null null 46.6804ms
+2026-07-03 15:58:20.058 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5278/api/v1/billing/invoices - null null
+2026-07-03 15:58:20.070 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5278/api/v1/patients - null null
+2026-07-03 15:58:20.090 +05:00 [INF] CORS policy execution successful.
+2026-07-03 15:58:20.093 +05:00 [INF] CORS policy execution successful.
+2026-07-03 15:58:20.097 +05:00 [INF] Executing endpoint 'HospitalMS.Api.Controllers.BillingController.GetInvoices (HospitalMS.Api)'
+2026-07-03 15:58:20.100 +05:00 [INF] Executing endpoint 'HospitalMS.Api.Controllers.PatientsController.GetAll (HospitalMS.Api)'
+2026-07-03 15:58:20.103 +05:00 [INF] Route matched with {action = "GetInvoices", controller = "Billing"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HospitalMS.Application.Common.ApiResponse`1[System.Collections.Generic.IReadOnlyList`1[HospitalMS.Application.DTOs.Billing.InvoiceDto]]]] GetInvoices(System.Nullable`1[System.Guid]) on controller HospitalMS.Api.Controllers.BillingController (HospitalMS.Api).
+2026-07-03 15:58:20.106 +05:00 [INF] Route matched with {action = "GetAll", controller = "Patients"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HospitalMS.Application.Common.ApiResponse`1[System.Collections.Generic.IReadOnlyList`1[HospitalMS.Application.DTOs.Patient.PatientDto]]]] GetAll() on controller HospitalMS.Api.Controllers.PatientsController (HospitalMS.Api).
+2026-07-03 15:58:20.112 +05:00 [INF] Executing OkObjectResult, writing value of type 'HospitalMS.Application.Common.ApiResponse`1[[System.Collections.Generic.IReadOnlyList`1[[HospitalMS.Application.DTOs.Billing.InvoiceDto, HospitalMS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-07-03 15:58:20.119 +05:00 [INF] Executing OkObjectResult, writing value of type 'HospitalMS.Application.Common.ApiResponse`1[[System.Collections.Generic.IReadOnlyList`1[[HospitalMS.Application.DTOs.Patient.PatientDto, HospitalMS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-07-03 15:58:20.122 +05:00 [INF] Executed action HospitalMS.Api.Controllers.BillingController.GetInvoices (HospitalMS.Api) in 10.9113ms
+2026-07-03 15:58:20.124 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5278/api/v1/billing/invoices - null null
+2026-07-03 15:58:20.126 +05:00 [INF] Executed action HospitalMS.Api.Controllers.PatientsController.GetAll (HospitalMS.Api) in 8.6927ms
+2026-07-03 15:58:20.128 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5278/api/v1/patients - null null
+2026-07-03 15:58:20.130 +05:00 [INF] Executed endpoint 'HospitalMS.Api.Controllers.BillingController.GetInvoices (HospitalMS.Api)'
+2026-07-03 15:58:20.140 +05:00 [INF] CORS policy execution successful.
+2026-07-03 15:58:20.142 +05:00 [INF] Executed endpoint 'HospitalMS.Api.Controllers.PatientsController.GetAll (HospitalMS.Api)'
+2026-07-03 15:58:20.152 +05:00 [INF] CORS policy execution successful.
+2026-07-03 15:58:20.156 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5278/api/v1/billing/invoices - 200 null application/json; charset=utf-8 97.3973ms
+2026-07-03 15:58:20.159 +05:00 [INF] Executing endpoint 'HospitalMS.Api.Controllers.BillingController.GetInvoices (HospitalMS.Api)'
+2026-07-03 15:58:20.161 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5278/api/v1/patients - 200 null application/json; charset=utf-8 91.3481ms
+2026-07-03 15:58:20.165 +05:00 [INF] Executing endpoint 'HospitalMS.Api.Controllers.PatientsController.GetAll (HospitalMS.Api)'
+2026-07-03 15:58:20.179 +05:00 [INF] Route matched with {action = "GetInvoices", controller = "Billing"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HospitalMS.Application.Common.ApiResponse`1[System.Collections.Generic.IReadOnlyList`1[HospitalMS.Application.DTOs.Billing.InvoiceDto]]]] GetInvoices(System.Nullable`1[System.Guid]) on controller HospitalMS.Api.Controllers.BillingController (HospitalMS.Api).
+2026-07-03 15:58:20.196 +05:00 [INF] Route matched with {action = "GetAll", controller = "Patients"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HospitalMS.Application.Common.ApiResponse`1[System.Collections.Generic.IReadOnlyList`1[HospitalMS.Application.DTOs.Patient.PatientDto]]]] GetAll() on controller HospitalMS.Api.Controllers.PatientsController (HospitalMS.Api).
+2026-07-03 15:58:20.204 +05:00 [INF] Executing OkObjectResult, writing value of type 'HospitalMS.Application.Common.ApiResponse`1[[System.Collections.Generic.IReadOnlyList`1[[HospitalMS.Application.DTOs.Billing.InvoiceDto, HospitalMS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-07-03 15:58:20.213 +05:00 [INF] Executing OkObjectResult, writing value of type 'HospitalMS.Application.Common.ApiResponse`1[[System.Collections.Generic.IReadOnlyList`1[[HospitalMS.Application.DTOs.Patient.PatientDto, HospitalMS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-07-03 15:58:20.217 +05:00 [INF] Executed action HospitalMS.Api.Controllers.BillingController.GetInvoices (HospitalMS.Api) in 13.8848ms
+2026-07-03 15:58:20.223 +05:00 [INF] Executed action HospitalMS.Api.Controllers.PatientsController.GetAll (HospitalMS.Api) in 11.9428ms
+2026-07-03 15:58:20.228 +05:00 [INF] Executed endpoint 'HospitalMS.Api.Controllers.BillingController.GetInvoices (HospitalMS.Api)'
+2026-07-03 15:58:20.234 +05:00 [INF] Executed endpoint 'HospitalMS.Api.Controllers.PatientsController.GetAll (HospitalMS.Api)'
+2026-07-03 15:58:20.238 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5278/api/v1/billing/invoices - 200 null application/json; charset=utf-8 114.3879ms
+2026-07-03 15:58:20.243 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5278/api/v1/patients - 200 null application/json; charset=utf-8 115.2306ms
+2026-07-03 15:58:28.709 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5278/api/v1/audit-logs - null null
+2026-07-03 15:58:28.709 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5278/api/v1/audit-logs - null null
+2026-07-03 15:58:28.719 +05:00 [INF] CORS policy execution successful.
+2026-07-03 15:58:28.730 +05:00 [INF] CORS policy execution successful.
+2026-07-03 15:58:28.733 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5278/api/v1/audit-logs - 204 null null 24.5561ms
+2026-07-03 15:58:28.736 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5278/api/v1/audit-logs - 204 null null 26.9825ms
+2026-07-03 15:58:28.747 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5278/api/v1/audit-logs - null null
+2026-07-03 15:58:28.768 +05:00 [INF] CORS policy execution successful.
+2026-07-03 15:58:28.771 +05:00 [INF] Executing endpoint 'HospitalMS.Api.Controllers.AuditLogsController.GetLogs (HospitalMS.Api)'
+2026-07-03 15:58:28.775 +05:00 [INF] Route matched with {action = "GetLogs", controller = "AuditLogs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HospitalMS.Application.Common.ApiResponse`1[System.Collections.Generic.IReadOnlyList`1[HospitalMS.Application.DTOs.AuditLog.AuditLogDto]]]] GetLogs() on controller HospitalMS.Api.Controllers.AuditLogsController (HospitalMS.Api).
+2026-07-03 15:58:28.782 +05:00 [INF] Executing OkObjectResult, writing value of type 'HospitalMS.Application.Common.ApiResponse`1[[System.Collections.Generic.IReadOnlyList`1[[HospitalMS.Application.DTOs.AuditLog.AuditLogDto, HospitalMS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-07-03 15:58:28.787 +05:00 [INF] Executed action HospitalMS.Api.Controllers.AuditLogsController.GetLogs (HospitalMS.Api) in 6.5974ms
+2026-07-03 15:58:28.789 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5278/api/v1/audit-logs - null null
+2026-07-03 15:58:28.793 +05:00 [INF] Executed endpoint 'HospitalMS.Api.Controllers.AuditLogsController.GetLogs (HospitalMS.Api)'
+2026-07-03 15:58:28.802 +05:00 [INF] CORS policy execution successful.
+2026-07-03 15:58:28.805 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5278/api/v1/audit-logs - 200 null application/json; charset=utf-8 58.1962ms
+2026-07-03 15:58:28.809 +05:00 [INF] Executing endpoint 'HospitalMS.Api.Controllers.AuditLogsController.GetLogs (HospitalMS.Api)'
+2026-07-03 15:58:28.825 +05:00 [INF] Route matched with {action = "GetLogs", controller = "AuditLogs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HospitalMS.Application.Common.ApiResponse`1[System.Collections.Generic.IReadOnlyList`1[HospitalMS.Application.DTOs.AuditLog.AuditLogDto]]]] GetLogs() on controller HospitalMS.Api.Controllers.AuditLogsController (HospitalMS.Api).
+2026-07-03 15:58:28.832 +05:00 [INF] Executing OkObjectResult, writing value of type 'HospitalMS.Application.Common.ApiResponse`1[[System.Collections.Generic.IReadOnlyList`1[[HospitalMS.Application.DTOs.AuditLog.AuditLogDto, HospitalMS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-07-03 15:58:28.838 +05:00 [INF] Executed action HospitalMS.Api.Controllers.AuditLogsController.GetLogs (HospitalMS.Api) in 7.2795ms
+2026-07-03 15:58:28.844 +05:00 [INF] Executed endpoint 'HospitalMS.Api.Controllers.AuditLogsController.GetLogs (HospitalMS.Api)'
+2026-07-03 15:58:28.849 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5278/api/v1/audit-logs - 200 null application/json; charset=utf-8 60.1624ms
+2026-07-03 15:58:30.357 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5278/api/v1/billing/invoices - null null
+2026-07-03 15:58:30.358 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5278/api/v1/patients - null null
+2026-07-03 15:58:30.358 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5278/api/v1/billing/invoices - null null
+2026-07-03 15:58:30.358 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5278/api/v1/patients - null null
+2026-07-03 15:58:30.365 +05:00 [INF] CORS policy execution successful.
+2026-07-03 15:58:30.371 +05:00 [INF] CORS policy execution successful.
+2026-07-03 15:58:30.383 +05:00 [INF] CORS policy execution successful.
+2026-07-03 15:58:30.392 +05:00 [INF] CORS policy execution successful.
+2026-07-03 15:58:30.395 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5278/api/v1/billing/invoices - 204 null null 37.6092ms
+2026-07-03 15:58:30.398 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5278/api/v1/patients - 204 null null 40.1806ms
+2026-07-03 15:58:30.401 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5278/api/v1/billing/invoices - 204 null null 42.978ms
+2026-07-03 15:58:30.405 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5278/api/v1/patients - 204 null null 46.1572ms
+2026-07-03 15:58:30.412 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5278/api/v1/billing/invoices - null null
+2026-07-03 15:58:30.425 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5278/api/v1/patients - null null
+2026-07-03 15:58:30.454 +05:00 [INF] CORS policy execution successful.
+2026-07-03 15:58:30.464 +05:00 [INF] CORS policy execution successful.
+2026-07-03 15:58:30.467 +05:00 [INF] Executing endpoint 'HospitalMS.Api.Controllers.BillingController.GetInvoices (HospitalMS.Api)'
+2026-07-03 15:58:30.470 +05:00 [INF] Executing endpoint 'HospitalMS.Api.Controllers.PatientsController.GetAll (HospitalMS.Api)'
+2026-07-03 15:58:30.473 +05:00 [INF] Route matched with {action = "GetInvoices", controller = "Billing"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HospitalMS.Application.Common.ApiResponse`1[System.Collections.Generic.IReadOnlyList`1[HospitalMS.Application.DTOs.Billing.InvoiceDto]]]] GetInvoices(System.Nullable`1[System.Guid]) on controller HospitalMS.Api.Controllers.BillingController (HospitalMS.Api).
+2026-07-03 15:58:30.476 +05:00 [INF] Route matched with {action = "GetAll", controller = "Patients"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HospitalMS.Application.Common.ApiResponse`1[System.Collections.Generic.IReadOnlyList`1[HospitalMS.Application.DTOs.Patient.PatientDto]]]] GetAll() on controller HospitalMS.Api.Controllers.PatientsController (HospitalMS.Api).
+2026-07-03 15:58:30.485 +05:00 [INF] Executing OkObjectResult, writing value of type 'HospitalMS.Application.Common.ApiResponse`1[[System.Collections.Generic.IReadOnlyList`1[[HospitalMS.Application.DTOs.Billing.InvoiceDto, HospitalMS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-07-03 15:58:30.492 +05:00 [INF] Executing OkObjectResult, writing value of type 'HospitalMS.Application.Common.ApiResponse`1[[System.Collections.Generic.IReadOnlyList`1[[HospitalMS.Application.DTOs.Patient.PatientDto, HospitalMS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-07-03 15:58:30.496 +05:00 [INF] Executed action HospitalMS.Api.Controllers.BillingController.GetInvoices (HospitalMS.Api) in 12.3268ms
+2026-07-03 15:58:30.498 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5278/api/v1/billing/invoices - null null
+2026-07-03 15:58:30.501 +05:00 [INF] Executed action HospitalMS.Api.Controllers.PatientsController.GetAll (HospitalMS.Api) in 9.9146ms
+2026-07-03 15:58:30.503 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5278/api/v1/patients - null null
+2026-07-03 15:58:30.506 +05:00 [INF] Executed endpoint 'HospitalMS.Api.Controllers.BillingController.GetInvoices (HospitalMS.Api)'
+2026-07-03 15:58:30.513 +05:00 [INF] CORS policy execution successful.
+2026-07-03 15:58:30.518 +05:00 [INF] Executed endpoint 'HospitalMS.Api.Controllers.PatientsController.GetAll (HospitalMS.Api)'
+2026-07-03 15:58:30.524 +05:00 [INF] CORS policy execution successful.
+2026-07-03 15:58:30.527 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5278/api/v1/billing/invoices - 200 null application/json; charset=utf-8 115.1795ms
+2026-07-03 15:58:30.532 +05:00 [INF] Executing endpoint 'HospitalMS.Api.Controllers.BillingController.GetInvoices (HospitalMS.Api)'
+2026-07-03 15:58:30.536 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5278/api/v1/patients - 200 null application/json; charset=utf-8 110.7709ms
+2026-07-03 15:58:30.539 +05:00 [INF] Executing endpoint 'HospitalMS.Api.Controllers.PatientsController.GetAll (HospitalMS.Api)'
+2026-07-03 15:58:30.555 +05:00 [INF] Route matched with {action = "GetInvoices", controller = "Billing"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HospitalMS.Application.Common.ApiResponse`1[System.Collections.Generic.IReadOnlyList`1[HospitalMS.Application.DTOs.Billing.InvoiceDto]]]] GetInvoices(System.Nullable`1[System.Guid]) on controller HospitalMS.Api.Controllers.BillingController (HospitalMS.Api).
+2026-07-03 15:58:30.565 +05:00 [INF] Route matched with {action = "GetAll", controller = "Patients"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HospitalMS.Application.Common.ApiResponse`1[System.Collections.Generic.IReadOnlyList`1[HospitalMS.Application.DTOs.Patient.PatientDto]]]] GetAll() on controller HospitalMS.Api.Controllers.PatientsController (HospitalMS.Api).
+2026-07-03 15:58:30.575 +05:00 [INF] Executing OkObjectResult, writing value of type 'HospitalMS.Application.Common.ApiResponse`1[[System.Collections.Generic.IReadOnlyList`1[[HospitalMS.Application.DTOs.Billing.InvoiceDto, HospitalMS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-07-03 15:58:30.583 +05:00 [INF] Executing OkObjectResult, writing value of type 'HospitalMS.Application.Common.ApiResponse`1[[System.Collections.Generic.IReadOnlyList`1[[HospitalMS.Application.DTOs.Patient.PatientDto, HospitalMS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-07-03 15:58:30.589 +05:00 [INF] Executed action HospitalMS.Api.Controllers.BillingController.GetInvoices (HospitalMS.Api) in 14.663ms
+2026-07-03 15:58:30.593 +05:00 [INF] Executed action HospitalMS.Api.Controllers.PatientsController.GetAll (HospitalMS.Api) in 11.1532ms
+2026-07-03 15:58:30.599 +05:00 [INF] Executed endpoint 'HospitalMS.Api.Controllers.BillingController.GetInvoices (HospitalMS.Api)'
+2026-07-03 15:58:30.604 +05:00 [INF] Executed endpoint 'HospitalMS.Api.Controllers.PatientsController.GetAll (HospitalMS.Api)'
+2026-07-03 15:58:30.608 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5278/api/v1/billing/invoices - 200 null application/json; charset=utf-8 109.423ms
+2026-07-03 15:58:30.612 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5278/api/v1/patients - 200 null application/json; charset=utf-8 108.9918ms
+2026-07-03 16:04:47.828 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5278/api/v1/patients - null null
+2026-07-03 16:04:47.849 +05:00 [INF] CORS policy execution successful.
+2026-07-03 16:04:47.901 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5278/api/v1/patients - 204 null null 73.0292ms
+2026-07-03 16:04:47.891 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5278/api/v1/patients - null null
+2026-07-03 16:04:48.000 +05:00 [INF] CORS policy execution successful.
+2026-07-03 16:04:48.002 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5278/api/v1/patients - 204 null null 110.7083ms
+2026-07-03 16:04:47.978 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5278/api/v1/patients - null null
+2026-07-03 16:04:48.054 +05:00 [INF] CORS policy execution successful.
+2026-07-03 16:04:48.056 +05:00 [INF] Executing endpoint 'HospitalMS.Api.Controllers.PatientsController.GetAll (HospitalMS.Api)'
+2026-07-03 16:04:48.069 +05:00 [INF] Route matched with {action = "GetAll", controller = "Patients"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HospitalMS.Application.Common.ApiResponse`1[System.Collections.Generic.IReadOnlyList`1[HospitalMS.Application.DTOs.Patient.PatientDto]]]] GetAll() on controller HospitalMS.Api.Controllers.PatientsController (HospitalMS.Api).
+2026-07-03 16:04:48.075 +05:00 [INF] Executing OkObjectResult, writing value of type 'HospitalMS.Application.Common.ApiResponse`1[[System.Collections.Generic.IReadOnlyList`1[[HospitalMS.Application.DTOs.Patient.PatientDto, HospitalMS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-07-03 16:04:48.080 +05:00 [INF] Executed action HospitalMS.Api.Controllers.PatientsController.GetAll (HospitalMS.Api) in 7.0692ms
+2026-07-03 16:04:48.082 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5278/api/v1/patients - null null
+2026-07-03 16:04:48.083 +05:00 [INF] Executed endpoint 'HospitalMS.Api.Controllers.PatientsController.GetAll (HospitalMS.Api)'
+2026-07-03 16:04:48.087 +05:00 [INF] CORS policy execution successful.
+2026-07-03 16:04:48.088 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5278/api/v1/patients - 200 null application/json; charset=utf-8 110.3138ms
+2026-07-03 16:04:48.090 +05:00 [INF] Executing endpoint 'HospitalMS.Api.Controllers.PatientsController.GetAll (HospitalMS.Api)'
+2026-07-03 16:04:48.105 +05:00 [INF] Route matched with {action = "GetAll", controller = "Patients"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HospitalMS.Application.Common.ApiResponse`1[System.Collections.Generic.IReadOnlyList`1[HospitalMS.Application.DTOs.Patient.PatientDto]]]] GetAll() on controller HospitalMS.Api.Controllers.PatientsController (HospitalMS.Api).
+2026-07-03 16:04:48.110 +05:00 [INF] Executing OkObjectResult, writing value of type 'HospitalMS.Application.Common.ApiResponse`1[[System.Collections.Generic.IReadOnlyList`1[[HospitalMS.Application.DTOs.Patient.PatientDto, HospitalMS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-07-03 16:04:48.122 +05:00 [INF] Executed action HospitalMS.Api.Controllers.PatientsController.GetAll (HospitalMS.Api) in 12.984ms
+2026-07-03 16:04:48.125 +05:00 [INF] Executed endpoint 'HospitalMS.Api.Controllers.PatientsController.GetAll (HospitalMS.Api)'
+2026-07-03 16:04:48.127 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5278/api/v1/patients - 200 null application/json; charset=utf-8 44.2187ms
+2026-07-03 16:04:48.704 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5278/api/v1/staff - null null
+2026-07-03 16:04:48.705 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5278/api/v1/departments - null null
+2026-07-03 16:04:48.707 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5278/api/v1/wards - null null
+2026-07-03 16:04:48.710 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5278/api/v1/departments - null null
+2026-07-03 16:04:48.710 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5278/api/v1/staff - null null
+2026-07-03 16:04:48.713 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5278/api/v1/wards - null null
+2026-07-03 16:04:48.715 +05:00 [INF] CORS policy execution successful.
+2026-07-03 16:04:48.722 +05:00 [INF] CORS policy execution successful.
+2026-07-03 16:04:48.731 +05:00 [INF] CORS policy execution successful.
+2026-07-03 16:04:48.741 +05:00 [INF] CORS policy execution successful.
+2026-07-03 16:04:48.749 +05:00 [INF] CORS policy execution successful.
+2026-07-03 16:04:48.756 +05:00 [INF] CORS policy execution successful.
+2026-07-03 16:04:48.759 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5278/api/v1/staff - 204 null null 54.9915ms
+2026-07-03 16:04:48.762 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5278/api/v1/departments - 204 null null 56.929ms
+2026-07-03 16:04:48.765 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5278/api/v1/wards - 204 null null 58.2033ms
+2026-07-03 16:04:48.768 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5278/api/v1/departments - 204 null null 58.0513ms
+2026-07-03 16:04:48.771 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5278/api/v1/staff - 204 null null 61.7812ms
+2026-07-03 16:04:48.774 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5278/api/v1/wards - 204 null null 61.0562ms
+2026-07-03 16:04:48.787 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5278/api/v1/staff - null null
+2026-07-03 16:04:48.796 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5278/api/v1/wards - null null
+2026-07-03 16:04:48.883 +05:00 [INF] CORS policy execution successful.
+2026-07-03 16:04:48.884 +05:00 [INF] Executing endpoint 'HospitalMS.Api.Controllers.WardsController.GetAll (HospitalMS.Api)'
+2026-07-03 16:04:48.809 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5278/api/v1/departments - null null
+2026-07-03 16:04:48.905 +05:00 [INF] CORS policy execution successful.
+2026-07-03 16:04:48.898 +05:00 [INF] Route matched with {action = "GetAll", controller = "Wards"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HospitalMS.Application.Common.ApiResponse`1[System.Collections.Generic.IReadOnlyList`1[HospitalMS.Application.DTOs.Ward.WardDto]]]] GetAll() on controller HospitalMS.Api.Controllers.WardsController (HospitalMS.Api).
+2026-07-03 16:04:48.879 +05:00 [INF] CORS policy execution successful.
+2026-07-03 16:04:48.907 +05:00 [INF] Executing endpoint 'HospitalMS.Api.Controllers.DepartmentsController.GetAll (HospitalMS.Api)'
+2026-07-03 16:04:48.923 +05:00 [INF] Executing OkObjectResult, writing value of type 'HospitalMS.Application.Common.ApiResponse`1[[System.Collections.Generic.IReadOnlyList`1[[HospitalMS.Application.DTOs.Ward.WardDto, HospitalMS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-07-03 16:04:49.258 +05:00 [INF] Executing endpoint 'HospitalMS.Api.Controllers.StaffController.GetAll (HospitalMS.Api)'
+2026-07-03 16:04:49.270 +05:00 [INF] Route matched with {action = "GetAll", controller = "Departments"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HospitalMS.Application.Common.ApiResponse`1[System.Collections.Generic.IReadOnlyList`1[HospitalMS.Application.DTOs.Department.DepartmentDto]]]] GetAll() on controller HospitalMS.Api.Controllers.DepartmentsController (HospitalMS.Api).
+2026-07-03 16:04:49.273 +05:00 [INF] Executed action HospitalMS.Api.Controllers.WardsController.GetAll (HospitalMS.Api) in 362.718ms
+2026-07-03 16:04:49.275 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5278/api/v1/wards - null null
+2026-07-03 16:04:49.275 +05:00 [INF] Route matched with {action = "GetAll", controller = "Staff"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HospitalMS.Application.Common.ApiResponse`1[System.Collections.Generic.IReadOnlyList`1[HospitalMS.Application.DTOs.Staff.StaffDto]]]] GetAll() on controller HospitalMS.Api.Controllers.StaffController (HospitalMS.Api).
+2026-07-03 16:04:49.334 +05:00 [INF] Executed endpoint 'HospitalMS.Api.Controllers.WardsController.GetAll (HospitalMS.Api)'
+2026-07-03 16:04:49.342 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5278/api/v1/wards - 200 null application/json; charset=utf-8 546.1822ms
+2026-07-03 16:04:49.334 +05:00 [INF] Executing OkObjectResult, writing value of type 'HospitalMS.Application.Common.ApiResponse`1[[System.Collections.Generic.IReadOnlyList`1[[HospitalMS.Application.DTOs.Department.DepartmentDto, HospitalMS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-07-03 16:04:49.337 +05:00 [INF] CORS policy execution successful.
+2026-07-03 16:04:49.353 +05:00 [INF] Executed action HospitalMS.Api.Controllers.DepartmentsController.GetAll (HospitalMS.Api) in 21.6682ms
+2026-07-03 16:04:49.357 +05:00 [INF] Executed endpoint 'HospitalMS.Api.Controllers.DepartmentsController.GetAll (HospitalMS.Api)'
+2026-07-03 16:04:49.368 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5278/api/v1/departments - 200 null application/json; charset=utf-8 559.1964ms
+2026-07-03 16:04:49.355 +05:00 [INF] Executing OkObjectResult, writing value of type 'HospitalMS.Application.Common.ApiResponse`1[[System.Collections.Generic.IReadOnlyList`1[[HospitalMS.Application.DTOs.Staff.StaffDto, HospitalMS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-07-03 16:04:49.354 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5278/api/v1/departments - null null
+2026-07-03 16:04:49.355 +05:00 [INF] Executing endpoint 'HospitalMS.Api.Controllers.WardsController.GetAll (HospitalMS.Api)'
+2026-07-03 16:04:49.385 +05:00 [INF] Executed action HospitalMS.Api.Controllers.StaffController.GetAll (HospitalMS.Api) in 45.4368ms
+2026-07-03 16:04:49.391 +05:00 [INF] Executed endpoint 'HospitalMS.Api.Controllers.StaffController.GetAll (HospitalMS.Api)'
+2026-07-03 16:04:49.388 +05:00 [INF] CORS policy execution successful.
+2026-07-03 16:04:49.389 +05:00 [INF] Route matched with {action = "GetAll", controller = "Wards"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HospitalMS.Application.Common.ApiResponse`1[System.Collections.Generic.IReadOnlyList`1[HospitalMS.Application.DTOs.Ward.WardDto]]]] GetAll() on controller HospitalMS.Api.Controllers.WardsController (HospitalMS.Api).
+2026-07-03 16:04:49.387 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5278/api/v1/staff - null null
+2026-07-03 16:04:49.393 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5278/api/v1/staff - 200 null application/json; charset=utf-8 606.3936ms
+2026-07-03 16:04:49.396 +05:00 [INF] Executing endpoint 'HospitalMS.Api.Controllers.DepartmentsController.GetAll (HospitalMS.Api)'
+2026-07-03 16:04:49.400 +05:00 [INF] Executing OkObjectResult, writing value of type 'HospitalMS.Application.Common.ApiResponse`1[[System.Collections.Generic.IReadOnlyList`1[[HospitalMS.Application.DTOs.Ward.WardDto, HospitalMS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-07-03 16:04:49.403 +05:00 [INF] CORS policy execution successful.
+2026-07-03 16:04:49.411 +05:00 [INF] Route matched with {action = "GetAll", controller = "Departments"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HospitalMS.Application.Common.ApiResponse`1[System.Collections.Generic.IReadOnlyList`1[HospitalMS.Application.DTOs.Department.DepartmentDto]]]] GetAll() on controller HospitalMS.Api.Controllers.DepartmentsController (HospitalMS.Api).
+2026-07-03 16:04:49.415 +05:00 [INF] Executed action HospitalMS.Api.Controllers.WardsController.GetAll (HospitalMS.Api) in 15.9669ms
+2026-07-03 16:04:49.417 +05:00 [INF] Executing endpoint 'HospitalMS.Api.Controllers.StaffController.GetAll (HospitalMS.Api)'
+2026-07-03 16:04:49.422 +05:00 [INF] Executing OkObjectResult, writing value of type 'HospitalMS.Application.Common.ApiResponse`1[[System.Collections.Generic.IReadOnlyList`1[[HospitalMS.Application.DTOs.Department.DepartmentDto, HospitalMS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-07-03 16:04:49.423 +05:00 [INF] Executed endpoint 'HospitalMS.Api.Controllers.WardsController.GetAll (HospitalMS.Api)'
+2026-07-03 16:04:49.424 +05:00 [INF] Route matched with {action = "GetAll", controller = "Staff"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HospitalMS.Application.Common.ApiResponse`1[System.Collections.Generic.IReadOnlyList`1[HospitalMS.Application.DTOs.Staff.StaffDto]]]] GetAll() on controller HospitalMS.Api.Controllers.StaffController (HospitalMS.Api).
+2026-07-03 16:04:49.428 +05:00 [INF] Executed action HospitalMS.Api.Controllers.DepartmentsController.GetAll (HospitalMS.Api) in 6.8359ms
+2026-07-03 16:04:49.430 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5278/api/v1/wards - 200 null application/json; charset=utf-8 155.2994ms
+2026-07-03 16:04:49.435 +05:00 [INF] Executing OkObjectResult, writing value of type 'HospitalMS.Application.Common.ApiResponse`1[[System.Collections.Generic.IReadOnlyList`1[[HospitalMS.Application.DTOs.Staff.StaffDto, HospitalMS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-07-03 16:04:49.436 +05:00 [INF] Executed endpoint 'HospitalMS.Api.Controllers.DepartmentsController.GetAll (HospitalMS.Api)'
+2026-07-03 16:04:49.442 +05:00 [INF] Executed action HospitalMS.Api.Controllers.StaffController.GetAll (HospitalMS.Api) in 8.3703ms
+2026-07-03 16:04:49.444 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5278/api/v1/departments - 200 null application/json; charset=utf-8 90.1379ms
+2026-07-03 16:04:49.448 +05:00 [INF] Executed endpoint 'HospitalMS.Api.Controllers.StaffController.GetAll (HospitalMS.Api)'
+2026-07-03 16:04:49.454 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5278/api/v1/staff - 200 null application/json; charset=utf-8 67.2689ms
+2026-07-03 16:04:49.779 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5278/api/v1/doctors - null null
+2026-07-03 16:04:49.780 +05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5278/api/v1/doctors - null null
+2026-07-03 16:04:49.799 +05:00 [INF] CORS policy execution successful.
+2026-07-03 16:04:49.811 +05:00 [INF] CORS policy execution successful.
+2026-07-03 16:04:49.814 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5278/api/v1/doctors - 204 null null 34.4803ms
+2026-07-03 16:04:49.816 +05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5278/api/v1/doctors - 204 null null 36.0503ms
+2026-07-03 16:04:49.824 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5278/api/v1/doctors - null null
+2026-07-03 16:04:49.842 +05:00 [INF] CORS policy execution successful.
+2026-07-03 16:04:49.846 +05:00 [INF] Executing endpoint 'HospitalMS.Api.Controllers.DoctorsController.GetAll (HospitalMS.Api)'
+2026-07-03 16:04:49.850 +05:00 [INF] Route matched with {action = "GetAll", controller = "Doctors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HospitalMS.Application.Common.ApiResponse`1[System.Collections.Generic.IReadOnlyList`1[HospitalMS.Application.DTOs.Doctor.DoctorDto]]]] GetAll() on controller HospitalMS.Api.Controllers.DoctorsController (HospitalMS.Api).
+2026-07-03 16:04:49.862 +05:00 [INF] Executing OkObjectResult, writing value of type 'HospitalMS.Application.Common.ApiResponse`1[[System.Collections.Generic.IReadOnlyList`1[[HospitalMS.Application.DTOs.Doctor.DoctorDto, HospitalMS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-07-03 16:04:49.868 +05:00 [INF] Executed action HospitalMS.Api.Controllers.DoctorsController.GetAll (HospitalMS.Api) in 11.3751ms
+2026-07-03 16:04:49.870 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5278/api/v1/doctors - null null
+2026-07-03 16:04:49.874 +05:00 [INF] Executed endpoint 'HospitalMS.Api.Controllers.DoctorsController.GetAll (HospitalMS.Api)'
+2026-07-03 16:04:49.884 +05:00 [INF] CORS policy execution successful.
+2026-07-03 16:04:49.888 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5278/api/v1/doctors - 200 null application/json; charset=utf-8 63.6928ms
+2026-07-03 16:04:49.892 +05:00 [INF] Executing endpoint 'HospitalMS.Api.Controllers.DoctorsController.GetAll (HospitalMS.Api)'
+2026-07-03 16:04:49.903 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5278/api/v1/departments - null null
+2026-07-03 16:04:49.907 +05:00 [INF] Route matched with {action = "GetAll", controller = "Doctors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HospitalMS.Application.Common.ApiResponse`1[System.Collections.Generic.IReadOnlyList`1[HospitalMS.Application.DTOs.Doctor.DoctorDto]]]] GetAll() on controller HospitalMS.Api.Controllers.DoctorsController (HospitalMS.Api).
+2026-07-03 16:04:49.914 +05:00 [INF] CORS policy execution successful.
+2026-07-03 16:04:49.922 +05:00 [INF] Executing OkObjectResult, writing value of type 'HospitalMS.Application.Common.ApiResponse`1[[System.Collections.Generic.IReadOnlyList`1[[HospitalMS.Application.DTOs.Doctor.DoctorDto, HospitalMS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-07-03 16:04:49.925 +05:00 [INF] Executing endpoint 'HospitalMS.Api.Controllers.DepartmentsController.GetAll (HospitalMS.Api)'
+2026-07-03 16:04:49.931 +05:00 [INF] Executed action HospitalMS.Api.Controllers.DoctorsController.GetAll (HospitalMS.Api) in 9.1359ms
+2026-07-03 16:04:49.934 +05:00 [INF] Route matched with {action = "GetAll", controller = "Departments"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HospitalMS.Application.Common.ApiResponse`1[System.Collections.Generic.IReadOnlyList`1[HospitalMS.Application.DTOs.Department.DepartmentDto]]]] GetAll() on controller HospitalMS.Api.Controllers.DepartmentsController (HospitalMS.Api).
+2026-07-03 16:04:49.937 +05:00 [INF] Executed endpoint 'HospitalMS.Api.Controllers.DoctorsController.GetAll (HospitalMS.Api)'
+2026-07-03 16:04:49.942 +05:00 [INF] Executing OkObjectResult, writing value of type 'HospitalMS.Application.Common.ApiResponse`1[[System.Collections.Generic.IReadOnlyList`1[[HospitalMS.Application.DTOs.Department.DepartmentDto, HospitalMS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-07-03 16:04:49.945 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5278/api/v1/doctors - 200 null application/json; charset=utf-8 74.6587ms
+2026-07-03 16:04:49.951 +05:00 [INF] Executed action HospitalMS.Api.Controllers.DepartmentsController.GetAll (HospitalMS.Api) in 9.6002ms
+2026-07-03 16:04:49.961 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5278/api/v1/departments - null null
+2026-07-03 16:04:49.966 +05:00 [INF] Executed endpoint 'HospitalMS.Api.Controllers.DepartmentsController.GetAll (HospitalMS.Api)'
+2026-07-03 16:04:49.972 +05:00 [INF] CORS policy execution successful.
+2026-07-03 16:04:49.975 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5278/api/v1/departments - 200 null application/json; charset=utf-8 71.8829ms
+2026-07-03 16:04:49.979 +05:00 [INF] Executing endpoint 'HospitalMS.Api.Controllers.DepartmentsController.GetAll (HospitalMS.Api)'
+2026-07-03 16:04:49.991 +05:00 [INF] Route matched with {action = "GetAll", controller = "Departments"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HospitalMS.Application.Common.ApiResponse`1[System.Collections.Generic.IReadOnlyList`1[HospitalMS.Application.DTOs.Department.DepartmentDto]]]] GetAll() on controller HospitalMS.Api.Controllers.DepartmentsController (HospitalMS.Api).
+2026-07-03 16:04:50.001 +05:00 [INF] Executing OkObjectResult, writing value of type 'HospitalMS.Application.Common.ApiResponse`1[[System.Collections.Generic.IReadOnlyList`1[[HospitalMS.Application.DTOs.Department.DepartmentDto, HospitalMS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-07-03 16:04:50.006 +05:00 [INF] Executed action HospitalMS.Api.Controllers.DepartmentsController.GetAll (HospitalMS.Api) in 6.9097ms
+2026-07-03 16:04:50.011 +05:00 [INF] Executed endpoint 'HospitalMS.Api.Controllers.DepartmentsController.GetAll (HospitalMS.Api)'
+2026-07-03 16:04:50.016 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5278/api/v1/departments - 200 null application/json; charset=utf-8 55.0172ms
