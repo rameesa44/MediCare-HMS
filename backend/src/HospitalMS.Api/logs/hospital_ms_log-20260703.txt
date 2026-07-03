@@ -1,0 +1,13 @@
+2026-07-03 01:32:56.362 +05:00 [INF] Saved 0 entities to in-memory store.
+2026-07-03 01:32:59.355 +05:00 [INF] Saved 5 entities to in-memory store.
+2026-07-03 01:32:59.453 +05:00 [INF] Saved 2 entities to in-memory store.
+2026-07-03 01:32:59.815 +05:00 [INF] Saved 3 entities to in-memory store.
+2026-07-03 01:32:59.883 +05:00 [INF] Saved 1 entities to in-memory store.
+2026-07-03 01:32:59.951 +05:00 [INF] Saved 3 entities to in-memory store.
+2026-07-03 01:32:59.953 +05:00 [INF] Database seeding completed successfully.
+2026-07-03 01:32:59.960 +05:00 [INF] Starting MediCare Hospital Management System API...
+2026-07-03 01:32:59.992 +05:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-03 01:33:00.144 +05:00 [INF] Now listening on: http://localhost:5278
+2026-07-03 01:33:00.148 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-03 01:33:00.150 +05:00 [INF] Hosting environment: Development
+2026-07-03 01:33:00.152 +05:00 [INF] Content root path: C:\Users\HP\Downloads\scd\backend\src\HospitalMS.Api
