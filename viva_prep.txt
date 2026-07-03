@@ -1,0 +1,123 @@
+================================================================================
+MEDI-CARE HOSPITAL MANAGEMENT SYSTEM (HMS) - VIVA PREPARATION SHEET
+================================================================================
+
+1. OVERALL TECHNOLOGY STACK
+================================================================================
+* backend:
+  - Language: C# (.NET 10.0 Core)
+  - Framework: ASP.NET Core Web API
+  - Database access: Entity Framework Core (EF Core) 10.0 (Object-Relational Mapper)
+  - Database System: PostgreSQL / Npgsql (in-memory DB configured for local testing)
+  - Authentication: JSON Web Tokens (JWT) for stateless role-based authorization
+  - DTO mapping: AutoMapper (maps backend entities to frontend response models)
+  - Password hashing: BCrypt.Net
+
+* frontend:
+  - Library: React 19 (Single Page Application)
+  - Build tool: Vite (ultra-fast module bundler)
+  - Language: TypeScript (strict type checking)
+  - State management & fetching: TanStack React Query (v5)
+  - Styling: Tailwind CSS (v4)
+  - Animations: Framer Motion
+  - Charts: Recharts (renders patient flow, department usage, and revenue stats)
+
+
+2. BACKEND CLEAN ARCHITECTURE LAYERS
+================================================================================
+The project follows clean architecture separation of concerns across 4 layers:
+
+* HospitalMS.Domain (Core Business Layer)
+  - Has zero external references.
+  - Entities (Domain Models): Patient.cs, Doctor.cs, Staff.cs, Appointment.cs, 
+    Ward.cs, Bed.cs, Admission.cs, Invoice.cs, HospitalSetting.cs, AuditLog.cs.
+  - Common: BaseEntity.cs (defines Audit fields: CreatedAt, CreatedBy, UpdatedAt, 
+    UpdatedBy, IsDeleted for soft deletes).
+  - Interfaces: Generic IRepository.cs and central IUnitOfWork.cs contracts.
+
+* HospitalMS.Application (Application Rules Layer)
+  - Defines DTOs (Data Transfer Objects) to clean up models sent to frontend.
+  - Mappings: MappingProfile.cs configured using AutoMapper (e.g. mapping Doctor 
+    with nested User data to a single flat DoctorDto).
+
+* HospitalMS.Infrastructure (Data & Infrastructure Integration Layer)
+  - DB context: HospitalDbContext.cs registers DbSets and maps database tables.
+  - Repositories: UnitOfWork.cs manages db context transaction boundaries.
+  - DB Seeder: DatabaseSeeder.cs runs startup seed data insertion.
+  - Security: TokenService.cs handles JWT access & refresh token signing.
+
+* HospitalMS.Api (Presentation API Layer)
+  - Controllers: AuthController.cs, DashboardController.cs, DepartmentsController.cs, 
+    DoctorsController.cs, StaffController.cs, PatientsController.cs, 
+    AppointmentsController.cs, WardsController.cs, BillingController.cs, 
+    AuditLogsController.cs, SettingsController.cs.
+  - Startup: Program.cs sets up Dependency Injection, CORS, Swagger, routing order, 
+    authentication middleware, and handles programmatic DB seeding.
+  - Middlewares: ExceptionMiddleware.cs intercepts all runtime crashes and returns 
+    sanitized ApiResponse JSON models instead of throwing raw server stacks.
+
+
+3. DATABASE CRUD OPERATIONS (EF CORE IMPLEMENTATION DETAILS)
+================================================================================
+
+* CREATE (Stage with AddAsync + Commit with SaveChangesAsync)
+  - Inside DepartmentsController.cs:
+    When a department is created:
+    1. Mapping: AutoMapper converts CreateDepartmentRequest DTO to Department Entity.
+    2. Primary Key: Guid.NewGuid() assigns a fresh UUID.
+    3. Add: `await _unitOfWork.Departments.AddAsync(department);`
+    4. Save: `await _unitOfWork.SaveChangesAsync();` commits to the database.
+
+* READ (Join with Include + Filter with Where + Execute with ListAsync)
+  - Inside AppointmentsController.cs:
+    To query appointments with Patient details, Doctor details, and Departments:
+    1. Include Joins: We call `.Include(a => a.Patient).ThenInclude(p => p.User)` 
+       to load referenced objects in a single database round-trip.
+    2. Filter: If a doctorId parameter is provided, we append `.Where(...)`.
+    3. Execute: `.ToListAsync()` calls the database.
+    4. Map: The resulting entity array is converted to DTOs before responding.
+
+* UPDATE (GetByIdAsync + Update state + SaveChangesAsync)
+  - Inside WardsController.cs:
+    To modify a Bed status:
+    1. Fetch: `var bed = await _unitOfWork.Beds.GetByIdAsync(bedId);`
+    2. Modify: `bed.Status = status;`
+    3. Mark Update: `_unitOfWork.Beds.Update(bed);` (informs EF tracker)
+    4. Save: `await _unitOfWork.SaveChangesAsync();` commits changes.
+
+* DELETE (Soft Delete Pattern)
+  - Inside DoctorsController.cs:
+    We never run true hard-delete queries (i.e. we do not remove database rows) 
+    to preserve audit trails.
+    1. Fetch: `var doctor = await _unitOfWork.Doctors.GetByIdAsync(id);`
+    2. Soft Delete: `_unitOfWork.Doctors.SoftDelete(doctor);` (sets BaseEntity's 
+       IsDeleted flag to true and stores DeletedAt/DeletedBy).
+    3. Global Filter: EF DbContext is configured with a global query filter 
+       `HasQueryFilter(e => !e.IsDeleted)` so flagged records are automatically 
+       hidden from subsequent read queries.
+    4. Save: `await _unitOfWork.SaveChangesAsync();` updates the flag in database.
+
+
+4. VIVA DEFENSE PATTERN CHEATSHEET
+================================================================================
+Be prepared to define these patterns if requested by the examiner:
+
+- Repository Pattern:
+  Acts as an in-memory collection of domain entities. It decouples the core domain 
+  layer from specific DB libraries (EF Core / Npgsql) so you don't write SQL queries 
+  inside controllers.
+
+- Unit of Work (UoW):
+  Wraps multiple generic repositories (Users, Doctors, Appointments, etc.) and shares 
+  a single DbContext instance. Ensures that multiple database changes succeed or fail 
+  together as a single atomic database transaction via UoW's SaveChangesAsync.
+
+- Dependency Injection (DI):
+  ASP.NET Core automatically resolves class instances. For instance, in 
+  AppointmentsController, we specify `IUnitOfWork` and `IMapper` in the constructor. 
+  The runtime injects the scoped dependencies.
+
+- DTO (Data Transfer Object):
+  Plain C# structures without logic. They shape backend models specifically for 
+  the web response, keeping DB columns like password hashes or delete flags hidden.
+================================================================================
