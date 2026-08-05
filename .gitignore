@@ -41,3 +41,8 @@ desktop.ini
 # ===== Misc =====
 *.log
 implementation_plan.md
+
+# Log files
+logs/
+backend/src/HospitalMS.Api/logs/
+*.log
